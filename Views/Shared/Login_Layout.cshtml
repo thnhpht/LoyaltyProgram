@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 0. Log in;
+		--web-view-id: n__Log_in;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: n__Log_in;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+
+	#n__Log_in {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(239,242,249,1);
+		overflow: hidden;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: 1__Dashboard.html;
+		cursor: pointer;
+		--web-view-name: 0. Log in;
+		--web-view-id: n__Log_in;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_1 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1 {
+		filter: drop-shadow(0px 3px 80px rgba(48, 101, 181, 0.102));
+		position: absolute;
+		overflow: visible;
+		width: 1320px;
+		height: 1100px;
+		left: 420.186px;
+		top: 109px;
+	}
+        #LOGIN {
+            left: 777.19px;
+            top: 513px;
+            position: absolute;
+            overflow: visible;
+            width: 86px;
+            height: 32px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            color: rgba(206,206,206,1);
+            letter-spacing: 1px;
+        }
+	#Rectangle_6 {
+		fill: rgba(201,209,217,1);
+	}
+        .Rectangle_6 {
+            position: absolute;
+            overflow: visible;
+            width: 8px;
+            height: 33px;
+            left: 737.19px;
+            top: 515px;
+        }
+        #Path_8 {
+            fill: rgba(255,255,255,1);
+        }
+
+        .Path_8 {
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.078));
+            overflow: visible;
+            position: absolute;
+            width: 446.45px;
+            height: 80px;
+            left: 737.19px;
+            top: 665.54px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #INPUTEMAIL {
+    
+            left: 769.186px;
+            top: 609px;
+            position: absolute;
+            overflow: visible;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        #INPUT_PASS {
+
+            left: 769.186px;
+            top: 690px;
+            position: absolute;
+            overflow: visible;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+	#Path_9 {
+		fill: rgba(255,255,255,1);
+	}
+        .Path_9 {
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.078));
+            overflow: visible;
+            position: absolute;
+            width: 446.45px;
+            height: 80px;
+            left: 737.58px;
+            top: 580.76px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+	
+	#EMAIL {
+		opacity: 0.5;
+		left: 769.186px;
+		top: 588px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,112,112,1);
+		letter-spacing: 0.5px;
+	}
+	#PASSWORD {
+		opacity: 0.5;
+		left: 768.8px;
+		top: 670px;
+		position: absolute;
+		overflow: visible;
+		height: 19px;
+		width: 79px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,112,112,1);
+		letter-spacing: 0.5px;
+	}
+        #Forgot_password {
+            left: 768.795px;
+            top: 766px;
+            position: absolute;
+            overflow: visible;
+            width: 121px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            
+            letter-spacing: 0.5px;
+            text-decoration: underline;
+        }
+
+	#Rectangle_4 {
+		fill: rgba(27,86,154,1);
+	}
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 80px;
+		left: 737.186px;
+		top: 581px;
+	}
+	#Path_12 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_12 {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		left: 1810.156px;
+		top: 272.003px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+        #Loyalty_Program {
+            left: 751px;
+            top: 282px;
+            position: absolute;
+            overflow: visible;
+            width: 346px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: UVF Pistilli;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            color: rgba(0,89,149,1);
+        }
+	#Rectangle_357 {
+		fill: rgba(0,55,104,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_357 {
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		height: 36px;
+		left: 1068px;
+		top: 842px;
+	}
+	#Group_568 {
+		position: absolute;
+		width: 85.37px;
+		height: 24px;
+		left: 1079.807px;
+		top: 846.992px;
+		overflow: visible;
+	}
+	#Login {
+		left: 0px;
+		top: 1.5px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(239,242,249,1);
+		letter-spacing: 0.5px;
+	}
+	#Group_482 {
+		position: absolute;
+		width: 20px;
+		height: 24px;
+		left: 65.37px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_10 {
+		fill: rgba(239,242,249,1);
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		width: 15.344px;
+		height: 24px;
+		left: 4.656px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_11 {
+		fill: rgba(239,242,249,1);
+	}
+	.Path_11 {
+		overflow: visible;
+		position: absolute;
+		width: 17.762px;
+		height: 14.508px;
+		left: 0px;
+		top: 4.746px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+    </style>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
